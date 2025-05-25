@@ -1,0 +1,201 @@
+
+@charset "UTF-8";
+
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      display: flex;
+      background-color: #111;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 60px rgba(255, 200, 100, 0.15);
+      width: 900px;
+      max-width: 95%;
+    }
+
+    .image-section {
+    flex: 1;
+    /* background-color: #1cf7ff; */
+    min-height: 600px;
+    }
+    
+    .image-section img {
+      height: 80px;
+      width: 80px;
+      object-fit: cover;
+      /* animation: fadeIn 2s ease-out; */
+    }
+
+    .image-section .money-img{
+        position: absolute;
+        /* bottom: 47%; */
+        left: 270px;
+        opacity: 0;
+        animation: moveup-in 2.5s linear;
+    }
+    .image-section .money-img2{
+        position: absolute;
+        /* top: 43%; */
+        left: 540px;
+        opacity: 0;
+        animation: moveup-in 2.5s linear;
+    }
+
+    @keyframes moveup-in {
+      from {
+        transform: translateY(0px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(240px);
+        opacity: 1;
+      }
+    }
+
+    .image-section #character-img3{
+        position: absolute;
+        height: 500px;
+        width: 400px;
+        object-fit: cover;
+        bottom: 30px;
+        left: 17%;
+        opacity: 1;
+         animation: moveleft-right 2s ease-out;
+    }
+
+
+
+    .form-section {
+      flex: 1;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      animation: moveleft-right 2s ease-out;
+    }
+
+    @keyframes moveleft-right {
+      from {
+        transform: translatex(-90px);
+        opacity: 0;
+      }
+      to {
+        transform: translatex(0);
+        opacity: 1;
+      }
+    }
+
+    .form-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-section p {
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      background: #1f1f1f;
+      border: 1px solid #333;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 1rem;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .form-group input:focus {
+      border-color: #9cff7d;
+      box-shadow: 0 0 10px rgba(156, 255, 125, 0.3);
+        background-color: #3a3a3a;
+    }
+
+    .button-group {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .button-group button {
+      background: #1cf7ff;
+      color: #000000;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      /* font-family: monospace; */
+    }
+
+    .button-group button:hover {
+      background: #555;
+    }
+
+    .button-group .arrow-btn {
+      background: #9cff7d;
+      color: #000;
+      padding: 0.8rem 1.2rem;
+      border-radius: 50%;
+      font-weight: bold;
+      font-size: 1.2rem;
+      box-shadow: 0 0 15px rgba(156, 255, 125, 0.5);
+    }
+
+    .small-text {
+        position: relative;
+    top: 30px;
+      font-size: 0.9rem;
+      color: #777;
+    
+    }
+
+    .top-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    .top-link button {
+      background: #9cff7d;
+      color: #000;
+      padding: 0.8rem 1.2rem;
+      border-radius: 50%;
+      font-weight: bold;
+      font-size: 1.2rem;
+      box-shadow: 0 0 15px rgba(156, 255, 125, 0.5);
+    }
+     .top-link  button:hover {
+      background: #555;
+    }
+
+    .top-link a {
+      color: #9cff7d;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }

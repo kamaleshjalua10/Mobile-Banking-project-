@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #0a001a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+#text-payment{
+  position: absolute;
+  top: 60px;
+  left: 45%;
+}
+.grid-container {
+  background-image: url('paymentpic.jpg');
+  height: 90vh;
+  max-width: 1200px;
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(29, 255, 225, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 400px;
+  width: 470px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 25px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(21, 176, 83, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+.card  input {
+  width: 70%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #bd2121;
+  background: transparent;
+  color: rgb(192, 192, 192);
+  font-size: 20px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px rgba(18, 254, 159, 0.4);
+}
+
+
+.new-task {
+  width: 100px;
+  background: linear-gradient(90deg, #18ff69, #0feb67);
+  border: none;
+  color: rgb(35, 32, 32);
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #18ff71, 0 0 20px #1bff7e;
+  transition: transform 0.3s ease;
+}
+
+.new-task:hover {
+  transform: scale(1.1);
+}
+
+#div-3{
+  position: relative;
+  left: 100px;
+  opacity: 0;
+}
+#div-3 h2{
+  color: aqua;
+  text-align: center;
+}
+#div-3 .new-task{
+  width: 200px;
+}
+#div-3 h1{
+	text-align: center;
+}
+ 

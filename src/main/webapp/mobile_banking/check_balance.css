@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #0a001a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+#text-checkbalance{
+  position: absolute;
+  top: 70px;
+  left: 45%;
+}
+.grid-container {
+
+  height: 90vh;
+  max-width: 1200px;
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(214, 29, 180, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 470px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 25px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(255, 0, 200, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+.card  input {
+  width: 70%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px rgba(255, 0, 200, 0.4);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #ff00cc, #3333ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.new-task {
+  background: linear-gradient(90deg, #ff00cc, #ff66ff);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc;
+  transition: transform 0.3s ease;
+}
+
+.new-task:hover {
+  transform: scale(1.1);
+}
+
+
+.grid-container img{
+  height: 400px;
+  position: relative;
+  top: 80px;
+  right: 70px;
+  opacity: 0 ;
+
+}
+
+#div-3{
+  position: relative;
+  right: 45px;
+  height: 180px;
+  opacity: 0 ;
+}
+#div-3 h1{
+  color: aqua;
+  text-align: center;
+}
+ 

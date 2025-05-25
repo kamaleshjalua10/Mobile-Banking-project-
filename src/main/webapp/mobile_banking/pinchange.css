@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body, html {
+  height: 100%;
+  background: linear-gradient(to bottom, #080116, #b62fd1);
+  /* background: linear-gradient(to bottom,#972bad , #001f3f); */
+  overflow: hidden;
+  border-radius: 15px;
+  border: 4px solid #ffffff;
+}
+#text-pinchange{
+  position: absolute;
+  top: 60px;
+  left: 45%;
+  color: white;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: float 8s ease-in-out infinite;
+}
+
+.circle1 {
+  width: 140px;
+  height: 140px;
+  background: #00ffff;
+  left: 40px;
+  bottom: 60px;
+}
+
+.circle2 {
+  width: 240px;
+  height: 240px;
+  background: linear-gradient(135deg, #ffcc00, #33cc33);
+  right: 80px;
+  top: 100px;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.laptop-div{
+    height: 600px;
+    width: 800px;
+    /* background-color: black; */
+    background-image: url('laptop3.jpg');
+    background-size: cover;
+    /* object-fit: cover; */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 15px rgba(211, 40, 211, 0.5);    
+}
+
+.login-box {
+  position: relative;
+  bottom: 25px;
+  height: 300px;
+  width: 500px;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+  z-index: 2;
+  text-align: center;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.login-box input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.login-box input:focus {
+  border-color: #00ffcc;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: #00cc66;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-box button:hover {
+  background: #1041f1;
+}
+
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
