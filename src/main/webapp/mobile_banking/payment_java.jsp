@@ -90,16 +90,45 @@
                                         // Optional: store receiver info in session
                                         session.setAttribute("receivername", receiverName);
                                         session.setAttribute("receivermobile", receiverMobile);
-                                    } else {
-                                        out.println("<h3>Receiver account not found.</h3>");
+                                    }else {
+                                    	
+                                    	%>		
+                                		<script type="text/javascript">
+                                		
+                                		alert(" Receiver account not found ");
+                                		window.history.back();
+                                		
+                                		</script>
+                                		
+                               			 <%
+                                       
                                     }
                                 }
                             }
                         } else {
-                            out.println("<h3>Insufficient balance.</h3>");
+                        	
+                        	%>		
+                    		<script type="text/javascript">
+                    		
+                    		alert(" Insufficient balance Please Deposit Money ");
+                    		window.location.href = "deposit.jsp";
+                    		
+                    		</script>
+                   			 <%	
+                        	
                         }
                     } else {
-                        out.println("<h3>Invalid PIN or sender account number.</h3>");
+                    	
+                    	%>		
+                		<script type="text/javascript">
+                		
+                		alert(" Invalid PIN or Account number. ");
+                		window.history.back();
+                		
+                		</script>
+                		
+              			<%
+                    	
                     }
                 }
             }

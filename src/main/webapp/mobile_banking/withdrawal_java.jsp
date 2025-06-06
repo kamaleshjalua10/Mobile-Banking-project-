@@ -74,6 +74,7 @@ try{
 		<script type="text/javascript">
     		
     		alert(" Your pin is wrong ");
+    		window.history.back();
     		
     		</script>
 		

@@ -66,7 +66,8 @@ Long faccount;
 %>		
 		<script type="text/javascript">
 		
-		alert(" Your password is wrong ");
+		alert(" Your Mobile No Or  password  is wrong ");
+		window.history.back();
 		
 		</script>
 <%		

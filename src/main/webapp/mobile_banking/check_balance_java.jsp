@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
  <%@ page import="java.sql.*"  %>   
@@ -61,6 +62,16 @@ BigDecimal money;
 			session.setAttribute("storebalance",money);
 			
 		}
+		else{
+	%>		
+			<script type="text/javascript">
+			
+			alert(" Your Pin is wrong ");
+			window.history.back();
+			
+			</script>
+	<%		
+		}
 		
 	}catch(Exception e){
 		out.println("<h3>Error : " + e.getMessage() + "</h3>");
@@ -69,8 +80,7 @@ BigDecimal money;
 	rs.close();
 	pstmt.close();
 	con.close();
-	
-	
+		
 	if(submit){
 
 		response.sendRedirect("check_balance.jsp");
